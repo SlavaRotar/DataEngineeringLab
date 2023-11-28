@@ -50,7 +50,6 @@ public class Main {
                     authors.add(row.getString(0));
                     commits.add(row.getString(1));
                 });
-
             File csv = new File("3gram.csv");
             csv.createNewFile();
 
