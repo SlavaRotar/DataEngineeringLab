@@ -43,7 +43,6 @@ public class Main {
 
         List<String> authors = new ArrayList<>();
         List<String> commits = new ArrayList<>();
-
         regexDf.select(regexDf.col("Author"), regexDf.col("Commit"))
                 .collectAsList()
                 .stream()
@@ -51,7 +50,6 @@ public class Main {
                     authors.add(row.getString(0));
                     commits.add(row.getString(1));
                 });
-
             File csv = new File("3gram.csv");
             csv.createNewFile();
 
