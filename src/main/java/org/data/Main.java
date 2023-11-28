@@ -43,7 +43,6 @@ public class Main {
 
         List<String> authors = new ArrayList<>();
         List<String> commits = new ArrayList<>();
-
         regexDf.select(regexDf.col("Author"), regexDf.col("Commit"))
                 .collectAsList()
                 .stream()
